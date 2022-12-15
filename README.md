@@ -39,7 +39,7 @@ MurkyStrings is by default build for .NET Framework however, you can compile it 
 
 
 
-I wrote a detailed blog post for that feel free to [check it out]()
+I wrote a detailed blog post for that feel free to [check it out](https://dr4k0nia.github.io/posts/String-Obfuscation-The-Malware-Way/)
 
 
 
