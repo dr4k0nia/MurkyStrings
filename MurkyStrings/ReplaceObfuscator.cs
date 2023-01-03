@@ -77,7 +77,7 @@ namespace MurkyStrings
                         }
                         else
                         {
-                            implant.Add(new CilInstruction(CilOpCodes.Ldstr, @"\"));
+                            implant.Add(new CilInstruction(CilOpCodes.Ldstr, "\u115F"));
                             implant.Add(new CilInstruction(CilOpCodes.Ldnull));
                             implant.Add(new CilInstruction(CilOpCodes.Call, replaceMethod));
                         }
@@ -102,7 +102,7 @@ namespace MurkyStrings
                 {
                     result.Append(_mode == Mode.Homoglyph
                         ? new string(GetHomoglyph(c), _random.Next(4))
-                        : new string((char) 0x5C, _random.Next(16)));
+                        : new string('\u115F', _random.Next(16)));
                     result.Append(c);
                 }
                 else
@@ -110,7 +110,7 @@ namespace MurkyStrings
                     result.Append(c);
                     result.Append(_mode == Mode.Homoglyph
                         ? new string(GetHomoglyph(c), 1)
-                        : new string((char) 0x5C, _random.Next(16)));
+                        : new string('\u115F', _random.Next(16)));
                 }
             }
 
